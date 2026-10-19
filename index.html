@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link rel="stylesheet" href="./index.css">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css" rel="stylesheet" />
+  <!-- font link strt-->
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Italiana&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Playwrite+CU+Guides&family=Satisfy&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Italiana&family=Italianno&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Playwrite+CU+Guides&family=Satisfy&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Calligraffitti&family=Italiana&family=Italianno&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Playwrite+CU+Guides&family=Satisfy&display=swap');
+
+    @import url('https://fonts.googleapis.com/css2?family=Calligraffitti&family=Dancing+Script:wght@400..700&family=Italiana&family=Italianno&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Playwrite+CU+Guides&family=Satisfy&display=swap');
+  </style>
+  <!-- font link end-->
+
+  <style>
+    @keyframes float {
+
+      0%,
+      100% {
+        transform: translateY(0);
+      }
+
+      50% {
+        transform: translateY(-15px);
+      }
+    }
+
+    .floating {
+      animation: float 4s ease-in-out infinite;
+    }
+  </style>
+
+
+
+</head>
+
+<body>
+  <nav class="flex  glass-nav justify-evenly items-center h-[15vh] backdrop-blur shadow-lg shadow-blue-950">
+    <h1 class="md:text-[4vw] text-[7vw] font-['satisfy'] text-black bg-white">Travify</h1>
+    <ul class="hidden md:flex justify-evenly items-center gap-15 text-black">
+      <li class="font-extralight hover:font-medium cursor-pointer ">Home</li>
+      <li class="font-extralight hover:font-medium cursor-pointer ">Destination</li>
+      <li class="font-extralight hover:font-medium cursor-pointer ">Tour</li>
+      <li class="font-extralight hover:font-medium cursor-pointer ">Pages</li>
+      <li class="font-extralight hover:font-medium cursor-pointer ">News</li>
+      <li class="font-extralight hover:font-medium cursor-pointer ">Contact</li>
+    </ul>
+    <i class="ri-menu-line md:hidden flex text-[9vw]"></i>
+    <i class="ri-search-line bg-slate-100  rounded-full text-white md:flex hidden"></i>
+    <i class="ri-user-line text-white  md:flex hidden"></i>
+  </nav>
+
+  <section class="slide bg-fixed md:h-[100vh] h-[70vh]">
+    <swiper-container class="mySwiper md:h-[100vh] w-[100%] h-[50vh] bg-black" pagination="true"
+      pagination-clickable="true" navigation="true" space-between="30" centered-slides="true" autoplay-delay="2500"
+      autoplay-disable-on-interaction="false">
+      <swiper-slide>
+        <div class="bg-[url('./images/main-slider-1-2.4865c85b.jpg')] bg-cover  bg-fixed h-[100vh] w-[100%]   relative">
+          <div class="bg-black/55 h-[100%] relative ">
+            <div class="   w-[70%] m-auto md:py-30  py-50 md:my-0">
+              <h2 class="font-['italiana'] text-[70px] text-red-600 font-bold ">Travel & Adventure</h2>
+
+
+              <p class="text-white">Where Would You Like To go?</p>
+            </div>
+
+
+
+            <div class="hidden md:block  absolute backdrop-blur rounded-2xl z-50 bottom-20 right-[9%] floating">
+              <div class=" rounded-2xl p-5 text-white w-60">
+                <div class="flex justify-between items-center">
+                  <span class="text-xs text-white/60">YOUR NEXT ESCAPE</span>
+                  <span class="gold">✦</span>
+                </div>
+                <p class="serif text-2xl mt-3">Somewhere magical.</p>
+                <p class="text-xs text-white/60 mt-2">Your story starts here.</p>
+              </div>
+            </div>
+
+          </div>
+
+
+        </div>
+
+
+
+
+      </swiper-slide>
+
+
+      <swiper-slide>
+        <div class="bg-[url('./images/main-slider-1-1.62fecf08.jpg')] bg-cover bg-fixed h-[100vh] w-[100%]   relative">
+          <div class="bg-black/55 h-[100%] relative">
+            <div class="   w-[70%] m-auto  md:py-30  py-50">
+              <h2 class="font-['italiana'] text-[70px] text-red-600 font-bold">Travel & Adventure</h2>
+
+
+              <p class="text-white">Where Would You Like To go?</p>
+            </div>
+
+
+
+            <div class="hidden md:block  absolute backdrop-blur rounded-2xl z-50 bottom-20 right-[9%] floating">
+              <div class="glass rounded-2xl p-5 text-white w-60">
+                <div class="flex justify-between items-center">
+                  <span class="text-xs text-white/60">YOUR NEXT ESCAPE</span>
+                  <span class="gold">✦</span>
+                </div>
+                <p class="serif text-2xl mt-3">Somewhere magical.</p>
+                <p class="text-xs text-white/60 mt-2">Your story starts here.</p>
+              </div>
+            </div>
+
+          </div>
+
+
+        </div>
+
+
+
+
+      </swiper-slide>
+      <swiper-slide>
+        <div class="bg-[url('./images/main-slider-1-3.fe6aff2e.jpg')] bg-cover bg-fixed h-[100vh] w-[100%]   relative">
+          <div class="bg-black/55 h-[100%] relative">
+            <div class="   w-[70%] m-auto  md:py-30  py-50">
+              <h2 class="font-['italiana'] text-[70px] text-red-600 font-bold">Travel & Adventure</h2>
+
+
+              <p class="text-white">Where Would You Like To go?</p>
+            </div>
+
+
+
+            <div class="hidden md:block  absolute backdrop-blur rounded-2xl z-50 bottom-20 right-[9%] floating">
+              <div class="glass rounded-2xl p-5 text-white w-60">
+                <div class="flex justify-between items-center">
+                  <span class="text-xs text-white/60">YOUR NEXT ESCAPE</span>
+                  <span class="gold">✦</span>
+                </div>
+                <p class="serif text-2xl mt-3">Somewhere magical.</p>
+                <p class="text-xs text-white/60 mt-2">Your story starts here.</p>
+              </div>
+            </div>
+
+          </div>
+
+
+        </div>
+
+
+
+
+      </swiper-slide>
+
+    </swiper-container>
+  </section>
+  <section class="px-5 relative z-10 md:-mt-10 mt-30">
+    <form id="quickSearch "
+      class=" max-w-6xl mx-auto bg-white rounded-2xl p-5 md:p-7 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5  shadow-2xl shadow-red-300">
+
+      <div class=" ">
+        <label for="searchDestination" class="block text-[11px] tracking-widest font-bold text-black mb-3">
+          WHERE TO
+        </label>
+        <input id="searchDestination" type="search" placeholder="Enter Keyword"
+          class="w-full outline-none bg-transparent text-sm">
+      </div>
+
+      <div>
+        <label for="travelDate" class="block text-[11px]  font-bold text-black mb-3">
+          WHEN
+        </label>
+        <input id="travelDate" type="date" class="w-full outline-none bg-transparent text-sm">
+      </div>
+
+      <div>
+        <label for="travelers" class="block text-[11px]  font-bold text-black mb-3">
+          ADVENTURE
+        </label>
+        <select id="ADVENTURE" class="w-full outline-none bg-transparent text-sm">
+          <option value="1">Wildlife</option>
+          <option value="2">Sightseeing</option>
+
+        </select>
+      </div>
+
+      <button type="submit" class="gold-bg rounded-xl py-4 bg-red-700 font-bold text-sm hover:bg-blue-900 transition">
+        Find Now ↗
+      </button>
+    </form>
+  </section>
+  <section
+    class=" min-h-[100vh] flexwrap flex justify-evenly items-center md:w-[100%] w-[90%] m-auto md:flex-row flex-col">
+    <div class="md:w-[50%] w-[90%] m-auto relative">
+      <img src="./images/about-one-img-1.e526a0a5.png" alt=""
+        class="relative transition-all  duration-500 ease-in-out hover:scale-105">
+      <div class="absolute z-30 left-0 md:top-80 top-40 floating shadow-2xl bg-white py-2 px-5 rounded-lg">
+        <p>Book Tour Now</p>
+        <p>91+ 545996 54i9
+        </p>
+
+
+      </div>
+      <div class="absolute z-50 md:right-10 right-1 top-20 md:flex floating ">
+        <span class="md:text-[6vw] text-[9vw] font-['satisfy'] text-red-600"> 30%</span> <br>
+        <span class="md:text-[4vw] text-[7vw]"> Discount</span>
+
+      </div>
+    </div>
+    <div class="md:w-[50%] w-[90%] m-auto ">
+      <span class="font-['satisfy'] text-red-600">Get to know us
+      </span>
+      <h1 class="md:text-[5vw] text-[8vw] font-['italiana'] ">Plan Your Trip with Travify</h1>
+      <p class="md:w-[80%] w-[100%]  my-4">There are many variations of passages of available but the majority have
+        suffered
+        alteration in some form, by injected hum randomised words which don't look even slightly</p>
+      <li class="my-3">Invest in your simply neighborhood</li>
+      <li class="">Support people in free text extreme need</li>
+      <li class="my-3">Largest global industrial business community</li>
+      <button class="bg-red-600 hover:cursor-pointer text-white p-4 rounded-2xl hover:bg-black">Book With Us
+        Now</button>
+    </div>
+  </section>
+  <section class="">
+    <div class="bg-[url('./images/video-one-bg.4420e0fe.jpg')] md:h-[100vh] h-[50vh] bg-cover bg-fixed">
+      <div class="bg-red/55 md:h-[100vh] ">
+
+
+        <div class="flex justify-evenly item-center md:flex-row flex-col">
+          <div class="md:w-[60%] w-[90%] m-auto md:my-20 my-25">
+
+            <h1 class="text-red-600  text-2xl  floating  font-['satisfy'] ">Are you ready to travel?</h1>
+            <p class="md:text-[4vw] text-[8vw] floating font-bold text-white ">Tevily is a World Leading Online Tour
+              Booking Platform</p>
+
+          </div>
+          <div
+            class="  md:grid-rows-2 gap-4  md:grid-cols-2 grid-cols-1  min-h-[80vh] md:w-[50%] w-[90%] m-auto py-10  md:grid hidden ">
+            <div class="size-[90%] outline outline-white/30   ">
+              <h1 class="md:text-[4vw] text-[8vw] font-['italiana'] text-white text-center my-12 p w-">Wild Tour</h1>
+            </div>
+            <div class="size-[90%]  outline outline-white/30 py-9 ">
+              <h1 class="md:text-[3vw] text-[8vw] font-['italiana'] text-white text-center my-6">Paragrliding Tour</h1>
+            </div>
+            <div class="md:size-[90%]  outline outline-white/30 ">
+              <h1 class="md:text-[3vw] text-[8vw] font-['italiana'] text-white text-center my-6 py-9 ">Adventure Tour</h1>
+            </div>
+            <div class="md:size-[90%]  outline outline-white/30 ">
+              <h1 class="md:text-[3vw] text-[8vw] font-['italiana'] text-white text-center my-3 ">hang Gliding Tour</h1>
+            </div>
+          </div>
+        </div>
+        
+
+      </div>
+   
+  </section>
+  <section class="">
+
+    <div class="w-[90%] md:w-[60%] m-auto text-center">
+      <h1 class="text-red-600 font-2xl font-['satisfy']">Featured Tours</h1>
+      <p class="md:text-[4vw] text-[8vw] font-['italiana']">Most Popular Tours
+      </p>
+    </div>
+
+
+    <div class="flex justify-evenly items-center md:flex-row flex-col w-[90%] md:w-[100%] min-h-[100vh] m-auto ">
+      <div
+        class="md:w-[30%] w-[90%] m-auto transition-all  duration-500 ease-in-out hover:scale-105 hover:cursor-pointer rounded-2xl shadow-2xl">
+        <img src="./images/popular-tours__img-1.e72f98f2.jpg" alt="" class="w-full h-[40%] my-3">
+        <p class="hover:text-red-600 hover:cursor-pointer text-2xl">Magic Of Italy Tour</p>
+        <p> <span class="text-red-600">$180</span> <span class="text-gray-500 ">/per person</span></p>
+        <button class="py-3 px-4 rounded-2xl bg-red-600 hover:cursor-pointer my-3">Explore More</button>
+      </div>
+      <div
+        class="md:w-[30%] w-[90%] m-auto transition-all  duration-500 ease-in-out hover:scale-105 hover:cursor-pointer rounded-2xl shadow-2xl">
+        <img src="./images/popular-tours__img-2.be6c507f.jpg" alt="" class="w-full h-[40%] my-3">
+        <p class="hover:text-red-600 hover:cursor-pointer text-2xl">National Park Of Tour</p>
+        <p> <span class="text-red-600">$180</span> <span class="text-gray-500 ">/per person</span></p>
+        <button class="py-3 px-4 rounded-2xl bg-red-600 hover:cursor-pointer my-3">Explore More</button>
+      </div>
+      <div
+        class="md:w-[30%] w-[90%] m-auto transition-all  duration-500 ease-in-out hover:scale-105 hover:cursor-pointer rounded-2xl shadow-2xl">
+        <img src="./images/popular-tours__img-3.58c2f734.jpg" alt="" class="w-full h-[40%] my-3">
+        <p class="hover:text-red-600 hover:cursor-pointer text-2xl">Discover Depth Of Beach</p>
+        <p> <span class="text-red-600">$180</span> <span class="text-gray-500 ">/per person</span></p>
+        <button class="py-3 px-4 rounded-2xl bg-red-600 hover:cursor-pointer my-3">Explore More</button>
+      </div>
+
+
+
+
+
+
+    </div>
+  </section>
+  <section class="md:min-h-[50vh] min-h-[100vh] bg-[#313041] text-white/50">
+    <div class="md:flex-row flex-col flex justify-evenly items-center md:py-20 py-5">
+      <div class="md:w-[25%] w-[90%] m-auto">
+        <h1 class="md:text-[4vw] text-[8vw] font-['satisfy'] text-white" >travify</h1>
+        <p class="my-4">Welcome to our Trip and Tour Agency. Lorem simply text amet cing elit.
+
+</p>
+<li class="my-3">+91 3902 74478</li>
+<li class="my-3">abc@gmail.com</li>
+<li class="my-3">387 road new york park</li>
+      </div>
+      <div class="md:w-[20%] md:p-14 p-0 w-[90%] m-auto">
+        <h2 class="text-[white] text-2xl my-6">company</h2>
+        <li class="my-3">about us</li>
+        <li class="my-3">community blog</li>
+        <li class="my-3">reward</li>
+        <li class="my-3">work with us</li>
+        <li class="my-3">meet the team</li>
+      </div>
+      <div class="md:w-[20%] w-[90%] m-auto">
+        <h2 class="text-[white] text-2xl">explore</h2>
+        <li class="my-3">account</li>
+        <li class="my-3">legal</li>
+        <li class="my-3">contact</li>
+        <li class="my-3">program</li>
+        <li class="my-3">privacy policy</li>
+      </div>
+      <div class="md:w-[25%] w-[90%] m-auto flex-col flex">
+        <h2 class="text-[white] text-2xl">newsletter</h2>
+        <input type="text" placeholder=" email address" class="px-7 py-5 outline rounded-lg mb-5">
+          <button class="px-20 py-5 outline rounded-lg">SUBSCRIBE</button>
+          <p>          <input type="checkbox" >I agree to all terms and policy
+</p>
+      </div>
+    </div>
+
+  </section>
+
+
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@14.0.1/swiper-element-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@14.0.1/swiper-element-bundle.min.js"></script>
+</body>
+
+</html>
