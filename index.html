@@ -35,6 +35,25 @@
       animation: float 4s ease-in-out infinite;
     }
   </style>
+  <style>
+    @keyframes rotate {
+
+      0%,
+      100% {
+        transform: rotate3d(59px);
+      }
+
+      50% {
+        transform: rotate3d(-15px);
+      }
+    }
+
+    .rotating {
+      animation: rotate 4s ease-in-out infinite;
+    }
+  </style>
+
+
 
 
 
@@ -250,48 +269,83 @@
               <h1 class="md:text-[3vw] text-[8vw] font-['italiana'] text-white text-center my-6">Paragrliding Tour</h1>
             </div>
             <div class="md:size-[90%]  outline outline-white/30 ">
-              <h1 class="md:text-[3vw] text-[8vw] font-['italiana'] text-white text-center my-6 py-9 ">Adventure Tour</h1>
+              <h1 class="md:text-[3vw] text-[8vw] font-['italiana'] text-white text-center my-6 py-9 ">Adventure Tour
+              </h1>
             </div>
             <div class="md:size-[90%]  outline outline-white/30 ">
               <h1 class="md:text-[3vw] text-[8vw] font-['italiana'] text-white text-center my-3 ">hang Gliding Tour</h1>
             </div>
           </div>
         </div>
-        
+
 
       </div>
-   
+
   </section>
+
+  <!-- <section class="m-h-[100vh]">
+    <div class="flex justify-evenly items-center ">
+      <div class="md:w-[50%] w-[90%] m-auto relative">
+        <div class="bg-[url('/images/why-choose-left-bg.ef1bd558.jpg')] bg-cover h-[100vh] relative">
+          <div
+            class="absolute   right-20 z-50  size-[150px] backdrop-blur rounded-full bg-red-300/50 flex justify-center items-center">
+            <h1 class="text-white text-4xl  font-['satisfy'] text-center">Trip & Tours</h1>
+          </div>
+        </div>
+      </div>
+      <div class="md:w-[50%] w-[90%] m-auto">
+        <div class="bg-[url('./images/why-choose-right-map.f0ca8326.png')]  bg-cover h-[100vh]">
+          <div class="bg-blue-950/80 h-[100%] ">
+
+          </div>
+
+
+
+
+        </div>
+
+      </div>
+      <h1>Our benefit lists</h1>
+      <h1>Why Choose Tevily</h1>
+      <p>There are many variations of passages of Lorem Ipsum is simply free text available in the market for you, but
+        the majority have suffered alteration in some form.</p>
+     <h1></h1>
+      Lorem ipsum is simply free text dolor sit but the majority have suffered amet, consectetur notted.
+
+      Get Instant Tour Bookings
+      Lorem ipsum is simply free text dolor sit but the majority have suffered amet, consectetur notted.
+    </div>
+  </section> -->
   <section class="">
 
-    <div class="w-[90%] md:w-[60%] m-auto text-center">
+    <div class="w-[90%] md:w-[60%] m-auto text-center ">
       <h1 class="text-red-600 font-2xl font-['satisfy']">Featured Tours</h1>
       <p class="md:text-[4vw] text-[8vw] font-['italiana']">Most Popular Tours
       </p>
     </div>
 
 
-    <div class="flex justify-evenly items-center md:flex-row flex-col w-[90%] md:w-[100%] min-h-[100vh] m-auto ">
+    <div class="flex justify-evenly items-center md:flex-row flex-col w-[90%] md:w-[100%] min-h-[100vh] m-auto  ">
       <div
-        class="md:w-[30%] w-[90%] m-auto transition-all  duration-500 ease-in-out hover:scale-105 hover:cursor-pointer rounded-2xl shadow-2xl">
-        <img src="./images/popular-tours__img-1.e72f98f2.jpg" alt="" class="w-full h-[40%] my-3">
+        class="md:w-[30%] w-[90%] m-auto  rounded-2xl shadow-2xl transition-all  duration-500 ease-in-out hover:scale-105 hover:cursor-pointer ">
+        <img src="./images/popular-tours__img-1.e72f98f2.jpg" alt="" class="w-full h-[40%] my-3  ">
         <p class="hover:text-red-600 hover:cursor-pointer text-2xl">Magic Of Italy Tour</p>
         <p> <span class="text-red-600">$180</span> <span class="text-gray-500 ">/per person</span></p>
-        <button class="py-3 px-4 rounded-2xl bg-red-600 hover:cursor-pointer my-3">Explore More</button>
+        <button class="py-3 px-4 rounded-2xl bg-red-600 hover:cursor-pointer my-3 hover:bg-black">Explore More</button>
       </div>
       <div
         class="md:w-[30%] w-[90%] m-auto transition-all  duration-500 ease-in-out hover:scale-105 hover:cursor-pointer rounded-2xl shadow-2xl">
         <img src="./images/popular-tours__img-2.be6c507f.jpg" alt="" class="w-full h-[40%] my-3">
         <p class="hover:text-red-600 hover:cursor-pointer text-2xl">National Park Of Tour</p>
         <p> <span class="text-red-600">$180</span> <span class="text-gray-500 ">/per person</span></p>
-        <button class="py-3 px-4 rounded-2xl bg-red-600 hover:cursor-pointer my-3">Explore More</button>
+        <button class="py-3 px-4 rounded-2xl bg-red-600 hover:cursor-pointer my-3 hover:bg-black">Explore More</button>
       </div>
       <div
         class="md:w-[30%] w-[90%] m-auto transition-all  duration-500 ease-in-out hover:scale-105 hover:cursor-pointer rounded-2xl shadow-2xl">
         <img src="./images/popular-tours__img-3.58c2f734.jpg" alt="" class="w-full h-[40%] my-3">
         <p class="hover:text-red-600 hover:cursor-pointer text-2xl">Discover Depth Of Beach</p>
         <p> <span class="text-red-600">$180</span> <span class="text-gray-500 ">/per person</span></p>
-        <button class="py-3 px-4 rounded-2xl bg-red-600 hover:cursor-pointer my-3">Explore More</button>
+        <button class="py-3 px-4 rounded-2xl bg-red-600 hover:cursor-pointer my-3 hover:bg-black">Explore More</button>
       </div>
 
 
@@ -304,16 +358,16 @@
   <section class="md:min-h-[50vh] min-h-[100vh] bg-[#313041] text-white/50">
     <div class="md:flex-row flex-col flex justify-evenly items-center md:py-20 py-5">
       <div class="md:w-[25%] w-[90%] m-auto">
-        <h1 class="md:text-[4vw] text-[8vw] font-['satisfy'] text-white" >travify</h1>
+        <h1 class="md:text-[4vw] text-[8vw] font-['satisfy'] text-white">Travify</h1>
         <p class="my-4">Welcome to our Trip and Tour Agency. Lorem simply text amet cing elit.
 
-</p>
-<li class="my-3">+91 3902 74478</li>
-<li class="my-3">abc@gmail.com</li>
-<li class="my-3">387 road new york park</li>
+        </p>
+        <li class="my-3">+91 3902 74478</li>
+        <li class="my-3">abc@gmail.com</li>
+        <li class="my-3">387 road new york park</li>
       </div>
       <div class="md:w-[20%] md:p-14 p-0 w-[90%] m-auto">
-        <h2 class="text-[white] text-2xl my-6">company</h2>
+        <h2 class="text-[white] text-2xl my-6">Company</h2>
         <li class="my-3">about us</li>
         <li class="my-3">community blog</li>
         <li class="my-3">reward</li>
@@ -321,7 +375,7 @@
         <li class="my-3">meet the team</li>
       </div>
       <div class="md:w-[20%] w-[90%] m-auto">
-        <h2 class="text-[white] text-2xl">explore</h2>
+        <h2 class="text-[white] text-2xl">Explore</h2>
         <li class="my-3">account</li>
         <li class="my-3">legal</li>
         <li class="my-3">contact</li>
@@ -329,12 +383,16 @@
         <li class="my-3">privacy policy</li>
       </div>
       <div class="md:w-[25%] w-[90%] m-auto flex-col flex">
-        <h2 class="text-[white] text-2xl">newsletter</h2>
+        <h2 class="text-[white] text-2xl">Newsletter</h2>
         <input type="text" placeholder=" email address" class="px-7 py-5 outline rounded-lg mb-5">
-          <button class="px-20 py-5 outline rounded-lg">SUBSCRIBE</button>
-          <p>          <input type="checkbox" >I agree to all terms and policy
-</p>
+        <button class="px-20 py-5 outline rounded-lg">SUBSCRIBE</button>
+        <p> <input type="checkbox">I agree to all terms and policy
+        </p>
       </div>
+    </div>
+    <div class="md:w-[40%] w-[90%] m-auto text-center ">
+      <p class="text-white/55">© 2016 Free HTML5. All Rights Reserved.
+        Designed by FreeHTML5.co Demo Images: Unsplash</p>
     </div>
 
   </section>
