@@ -32,7 +32,7 @@
 </style>
 
 <body>
-    <nav class="flex  glass-nav justify-evenly items-center h-[15vh] backdrop-blur shadow-lg shadow-blue-950">
+    <nav class="flex   glass-nav justify-evenly items-center h-[15vh] backdrop-blur shadow-lg shadow-blue-950">
         <h1 class="md:text-[4vw] text-[7vw] font-['satisfy'] text-black bg-white">Travify</h1>
         <ul class="hidden md:flex justify-evenly items-center gap-15 text-black">
             <li class="font-extralight hover:font-medium cursor-pointer ">Home</li>
@@ -46,11 +46,11 @@
         <i class="ri-search-line   rounded-full md:flex hidden"></i>
         <i class="ri-user-line   md:flex hidden"></i>
     </nav>
-    <section class="bg-[url('./images/main-slider-1-2.4865c85b.jpg')] h-[50vh] bg-cover shadow-lg relative">
+    <section class="bg-[url('./images/main-slider-1-2.4865c85b.jpg')] h-[50vh] bg-cover  relative  shadow-2xl bg-fixed shadow-blue-950">
         <div class="bg-black/55 h-[100%] items-center justify-center flex relative">
             <div class="text-white text-center md:text-[4vw] text-[8vw] font-['calligraffi']">Destinations</div>
             <div
-                class="absolute  floating right-20 z-50  size-[150px] backdrop-blur rounded-full bg-red-300/50 flex justify-center items-center">
+                class="absolute  floating right-20 z-50 bottom-2 size-[150px] backdrop-blur rounded-full bg-red-300/50 flex justify-center items-center">
                 <h1 class="text-white text-4xl  font-['satisfy'] text-center">Bookings Here</h1>
             </div>
 
@@ -178,7 +178,37 @@
         </div>
 
     </section>
-</body>
+    <div class="scroll floating" style="font-size: 40px;position: fixed; bottom: 10px; right: 10px;z-index: 9999;display: none;  ">
+    <i class="ri-arrow-up-line arrow"></i>
 
+  </div>
+  <html class="scroll-smooth scrollbar-thumb-blue-950 scrollbar-track-white overflow-auto "></html>
+</body>
+<script>
+  let btn = document.querySelector(".scroll")
+  let body = document.querySelector("body")
+
+  window.addEventListener("scroll", (e) => {
+    if (window.scrollY > 60) {
+      btn.style.display = "block"
+
+    }
+
+        if (window.scrollY < 60) {
+      btn.style.display = "none"
+
+    }
+  
+
+  })
+
+  btn.addEventListener("click",()=>{
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  })
+
+
+
+
+</script>
 
 </html>

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css" rel="stylesheet" />
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Calligraffitti&family=Italiana&family=Italianno&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Playwrite+CU+Guides&family=Satisfy&display=swap');
+</style>
+<style>
+    @keyframes float {
+
+        0%,
+        100% {
+            transform: translateY(0);
+        }
+
+        50% {
+            transform: translateY(-15px);
+        }
+    }
+
+    .floating {
+        animation: float 4s ease-in-out infinite;
+    }
+</style>
+
+<body>
+    <nav class="flex   glass-nav justify-evenly items-center h-[15vh] backdrop-blur shadow-lg shadow-blue-950">
+        <h1 class="md:text-[4vw] text-[7vw] font-['satisfy'] text-black bg-white">Travify</h1>
+        <ul class="hidden md:flex justify-evenly items-center gap-15 text-black">
+            <li class="font-extralight hover:font-medium cursor-pointer ">Home</li>
+            <li class="font-extralight hover:font-medium cursor-pointer ">Destination</li>
+            <li class="font-extralight hover:font-medium cursor-pointer ">Tour</li>
+            <li class="font-extralight hover:font-medium cursor-pointer ">Pages</li>
+            <li class="font-extralight hover:font-medium cursor-pointer ">News</li>
+            <li class="font-extralight hover:font-medium cursor-pointer ">Contact</li>
+        </ul>
+        <i class="ri-menu-line md:hidden flex text-[9vw]"></i>
+        <i class="ri-search-line   rounded-full md:flex hidden"></i>
+        <i class="ri-user-line   md:flex hidden"></i>
+    </nav>
+    <section
+        class="bg-[url('./images/main-slider-1-2.4865c85b.jpg')] h-[50vh] bg-cover  relative  shadow-2xl shadow-blue-950">
+        <div class="bg-black/55 h-[100%] items-center justify-center flex relative">
+            <div class="text-white text-center md:text-[4vw] text-[8vw] font-['calligraffi']">Contact</div>
+            <div
+                class="absolute  floating right-20 z-50 bottom-2 size-[150px] backdrop-blur rounded-full bg-red-300/50 flex justify-center items-center">
+                <h1 class="text-white text-4xl  font-['satisfy'] text-center">Contact Here</h1>
+            </div>
+
+        </div>
+
+
+    </section>
+    <section class="md:h-[100vh] h-[60vh]">
+        <div class="flex justify-evenly items-center md:p-23 md:flex-row flex-col">
+            <div class="md:w-[20%] w-[90%] m-auto my-4">
+                <h1 class="text-red-600 font-['satisfy']">Talk with our team</h1>
+                <h1 class="md:text-4xl text-2xl font-bold">Any Question? Feel Free to Contact</h1>
+            </div>
+            <div class="md:w-[80%] w-[90%] m-auto ">
+                <div class="flex justify-evenly items-center text-start md:flex-row flex-col">
+                    <input type="text" placeholder="name" class="px-30 py-4 md:my-0 my-5 outline outline-black/30 rounded-lg">
+                    <input type="email" placeholder="email" class="px-30 py-4 md:my-0   outline outline-black/30 rounded-lg my-5">
+                </div >
+                <textarea placeholder="enter message here" class="px-30 py-4 md:ml-3 ml-0  outline outline-black/30 rounded-lg my-5 "></textarea>
+                
+                
+            </div>
+
+        </div>
+        <div class="ml-5">
+                     <button class="px-20 py-4 bg-red-600 text-white text-2xl md:ml-80 hover:bg-black cursor-pointer">Send A Message</button>
+                </div>
+
+    </section>
+
+
+    <section class="md:min-h-[50vh] min-h-[100vh]  bg-[#313041] text-white/50">
+        <div class="md:flex-row flex-col flex justify-evenly items-center md:py-20 py-5">
+            <div class="md:w-[25%] w-[90%] m-auto">
+                <h1 class="md:text-[4vw] text-[8vw] font-['satisfy'] text-white">Travify</h1>
+                <p class="my-4">Welcome to our Trip and Tour Agency. Lorem simply text amet cing elit.
+
+                </p>
+                <li class="my-3">+91 3902 74478</li>
+                <li class="my-3">abc@gmail.com</li>
+                <li class="my-3">387 road new york park</li>
+            </div>
+            <div class="md:w-[20%] md:p-14 p-0 w-[90%] m-auto">
+                <h2 class="text-[white] text-2xl my-6">Company</h2>
+                <li class="my-3">about us</li>
+                <li class="my-3">community blog</li>
+                <li class="my-3">reward</li>
+                <li class="my-3">work with us</li>
+                <li class="my-3">meet the team</li>
+            </div>
+            <div class="md:w-[20%] w-[90%] m-auto">
+                <h2 class="text-[white] text-2xl">Explore</h2>
+                <li class="my-3">account</li>
+                <li class="my-3">legal</li>
+                <li class="my-3">contact</li>
+                <li class="my-3">program</li>
+                <li class="my-3">privacy policy</li>
+            </div>
+            <div class="md:w-[25%] w-[90%] m-auto flex-col flex">
+                <h2 class="text-[white] text-2xl">Newsletter</h2>
+                <input type="text" placeholder=" email address" class="px-7 py-5 outline rounded-lg mb-5">
+                <button class="px-20 py-5 outline rounded-lg">SUBSCRIBE</button>
+                <p> <input type="checkbox">I agree to all terms and policy
+                </p>
+            </div>
+        </div>
+        <div class="md:w-[40%] w-[90%] m-auto text-center ">
+            <p class="text-white/55">© 2016 Free HTML5. All Rights Reserved.
+                Designed by FreeHTML5.co Demo Images: Unsplash</p>
+        </div>
+
+    </section>
+
+   <div class="scroll floating" style="font-size: 40px;position: fixed; bottom: 10px; right: 10px;z-index: 9999;display: none;  ">
+    <i class="ri-arrow-up-line arrow"></i>
+
+  </div>
+  <html class="scroll-smooth scrollbar-thumb-blue-950 scrollbar-track-white overflow-auto "></html>
+
+
+</body>
+<script>
+  let btn = document.querySelector(".scroll")
+  let body = document.querySelector("body")
+
+  window.addEventListener("scroll", (e) => {
+    if (window.scrollY > 60) {
+      btn.style.display = "block"
+
+    }
+
+        if (window.scrollY < 60) {
+      btn.style.display = "none"
+
+    }
+  
+
+  })
+
+  btn.addEventListener("click",()=>{
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  })
+
+
+
+
+</script>
+</html>
